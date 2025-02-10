@@ -10,6 +10,12 @@ export interface useLinkedInType {
     state?: string;
     scope?: string;
     closePopupMessage?: string;
+    Browser: {
+        open?: (options: {
+            url: string;
+        }) => Promise<void>;
+        close?: () => void;
+    };
 }
 export interface LinkedInType extends useLinkedInType {
     children: ({ linkedInLogin }: {

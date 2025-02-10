@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useRef } from 'react';
 import { useLinkedInType } from './types';
 import { LINKEDIN_OAUTH2_STATE } from './utils';
-import { Browser } from '@capacitor/browser';
 
 const generateRandomString = (length = 20) => {
   let result = '';
@@ -21,6 +20,7 @@ export function useLinkedIn({
   onError,
   scope = 'r_emailaddress',
   state = '',
+  Browser,
 }: useLinkedInType) {
   const popUpIntervalRef = useRef<number>(null);
   const receiveMessage = useCallback(
