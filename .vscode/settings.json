@@ -3,5 +3,8 @@
   "editor.formatOnSave": true,
   "files.insertFinalNewline": true,
   "editor.formatOnPaste": false,
-  "cSpell.words": ["emailaddress"]
+  "cSpell.words": ["emailaddress"],
+  "[ignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  }
 }
