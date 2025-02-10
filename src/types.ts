@@ -12,7 +12,13 @@ export interface useLinkedInType {
   state?: string;
   scope?: string;
   closePopupMessage?: string;
+  Browser?: {
+    open?: (options: { url: string }) => Promise<void>;
+    close?: () => void;
+  };
+}
 
+export interface useLinkedInIOSType extends useLinkedInType {
   Browser: {
     open?: (options: { url: string }) => Promise<void>;
     close?: () => void;
