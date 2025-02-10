@@ -1,4 +1,6 @@
 import { useLinkedInType } from './types';
-export declare function useLinkedIn({ redirectUri, clientId, onSuccess, onError, scope, state, Browser, }: useLinkedInType): {
-    linkedInLogin: () => void;
+export declare function useLinkedIn(props: useLinkedInType): {
+    linkedInLogin: {
+        linkedInLogin: () => void;
+    };
 };
