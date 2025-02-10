@@ -6,7 +6,7 @@ export function useLinkedIn(props: useLinkedInType) {
   const isIOS = !!props.Browser;
   const iosLogin = useLinkedInIOS(props as useLinkedInIOSType);
   const oldLogin = useLinkedInOld(props);
-  const linkedInLogin = isIOS ? iosLogin : oldLogin;
+  const { linkedInLogin } = isIOS ? iosLogin : oldLogin;
 
   return {
     linkedInLogin,
