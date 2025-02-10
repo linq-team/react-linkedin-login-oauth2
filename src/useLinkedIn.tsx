@@ -19,7 +19,7 @@ const generateRandomString = (length = 20) => {
   return result;
 };
 
-export function useLinkedInOld({
+export function useLinkedIn({
   redirectUri,
   clientId,
   onSuccess,
